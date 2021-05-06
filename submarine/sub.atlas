@@ -1,0 +1,58 @@
+animations {
+  id: "submarine"
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-0.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-1.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-10.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-11.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-2.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-3.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-4.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-5.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-6.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-7.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-8.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sub/AgonizingInformalBoaconstrictor-max-1mb-9.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 5
+  flip_horizontal: 1
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 2
+inner_padding: 0

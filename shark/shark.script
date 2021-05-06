@@ -1,0 +1,66 @@
+xPath = {100, 150, 625, 800, 800, 450, 100}
+yPath = {200, 700, 500, 650, 225, 475, 200}
+
+SPEED = 50
+close = 15
+CLOSE_ENOUGH = 10
+
+WAYPOINT1 = 1
+WAYPOINT2 = 2
+
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	self.speed = vmath.vector3(0, 0, 0)
+	go.set_position(vmath.vector3(xPath[1], yPath[1], 0))
+
+end
+
+function final(self)
+	msg.post(".", "release_input_focus")
+end
+
+function update(self, dt)
+
+	for i = 1, 6 do
+		startPt = vmath.vector3(xPath[i], yPath[i], 0)
+		endPt = vmath.vector3(xPath[i+1], yPath[i+1], 0)
+		msg.post("@render:", "draw_line", {
+			start_point = startPt, end_point = endPt, color = vmath.vector4(1, 1, 1, 1) } )
+		end
+
+
+		if (close > CLOSE_ENOUGH) then
+
+			dx = xPath[WAYPOINT2] - xPath[WAYPOINT1]
+			dy = yPath[WAYPOINT2] - yPath[WAYPOINT1]
+			dPath = math.sqrt(dx*dx + dy*dy)
+			speedX = (dx/dPath) * SPEED
+			speedY = (dy/dPath) * SPEED
+
+			self.speed.x = speedX
+			self.speed.y = speedY
+
+			go.set_position(go.get_position() + self.speed * dt)
+
+		end
+
+		dx = xPath[WAYPOINT2] - go.get_position().x
+		dy = yPath[WAYPOINT2] - go.get_position().y
+		close = math.sqrt(dx*dx + dy*dy)
+
+		if (close < CLOSE_ENOUGH) then
+
+			close = 15
+			WAYPOINT1 = WAYPOINT1 + 1
+			WAYPOINT2 = WAYPOINT2 + 1
+			go.set_position(vmath.vector3(xPath[WAYPOINT1], yPath[WAYPOINT1], 0))
+
+			if WAYPOINT2 > 7 then
+				WAYPOINT1 = 1
+				WAYPOINT2 = 2
+			end
+
+		end
+
+	end

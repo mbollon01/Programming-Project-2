@@ -1,0 +1,27 @@
+images {
+  image: "/assets/underwater-fantasy-files/PNG/layers/far.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/underwater-fantasy-files/PNG/layers/foregound-merged.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/underwater-fantasy-files/PNG/layers/foreground-1.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/underwater-fantasy-files/PNG/layers/foreground-2.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/underwater-fantasy-files/PNG/layers/sand.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/underwater-fantasy-files/PNG/underwater-fantasy-preview.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+margin: 0
+extrude_borders: 2
+inner_padding: 0

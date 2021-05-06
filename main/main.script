@@ -1,0 +1,5 @@
+function init(self)
+	collectionfactory.create("#collectionfactory")
+	msg.post("#sound", "play_sound")
+	msg.post("#player", "play_sound")
+end
